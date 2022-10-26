@@ -1,0 +1,38 @@
+.submitHeader{
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 4rem;
+}
+.submitForm{
+    display: grid;
+    gap: 10px;
+    margin: 2rem 15rem 4rem ;
+}
+.submitForm input,ul textarea{
+    padding: 0.4rem 0.7rem;
+    width: 100%;
+}
+.submitForm .submitButton{
+    padding: 5px 10px;
+    background: #150e21;
+    border: 2px #150e21 solid;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.submitForm .submitButton:hover{
+    border: 2px solid #150e21;
+    color: #150e21;
+    background: #fff;
+}
+
+@media screen and (max-width:800px){
+    .submitForm{
+        margin: 2rem 7rem 4rem ;
+    }
+}
+@media screen and (max-width:500px) {
+    .submitForm{
+        margin: 2rem 2rem 4rem ;
+    }
+}

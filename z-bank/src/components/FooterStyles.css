@@ -1,0 +1,116 @@
+.Footer{
+    background: #150e21;
+    padding: 6rem 5rem 2rem;
+    color: #fff;
+}
+.Footer h3{
+    font-size: 1.5rem;
+}
+.Footer h4{
+    margin: 15px 0;
+    font-weight: normal;
+}
+.Footer .email{
+    margin-bottom: 1rem;
+}
+.Footer .email input{
+    padding: 0.3rem 1rem;
+    width: 25%;
+    margin-right: 7px;
+}
+.Footer .email button{
+    padding: 5px 10px;
+    background: none;
+    border: 2px #fff solid;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 1s ease;
+}
+.Footer .email button:hover{
+    border: 2px solid red;
+    color: red;
+}
+.Footer .links{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 2rem;
+}
+.Footer .links div h4{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+.Footer .links div .section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Footer .links div .section a{
+    color: #fff;
+    font-weight: 250;
+}
+.Footer .copyright{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4rem;
+}
+.Footer .copyright .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+.Footer .copyright .logo img{
+    width: 25%;
+}
+
+.Footer .copyright .logo h1{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.Footer .copyright  h4{
+    font-weight: 250;
+}
+.Footer .copyright .social-media{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.Footer .copyright .social-media img{
+    width: 70%;
+}
+
+@media screen and (max-width:700px){
+    .Footer .links{
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    .Footer .copyright{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .Footer .copyright .logo{
+        margin-bottom: 5px;
+    }
+    .Footer .copyright .social-media{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width:470px){
+    .Footer{
+        padding: 6rem 1rem 2rem;
+    }
+    .Footer .email input{
+        margin-bottom: 7px;
+    }
+    .Footer .links{
+        grid-template-columns: repeat(1,1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+    }
+}
